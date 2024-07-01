@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Reviews - DesignQ</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f0f0f0;
+            color: #ccc1c1;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 0;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        .logo {
+      /* Ensure the logo can act as a link */
+      display: inline-block;
+    }
+
+    .logo a {
+      /* Remove underline and style link */
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.8rem;
+      display: inline-flex; /* Ensure it takes up only as much space as needed */
+      align-items: center; /* Center vertically */
+    }
+        .logo h1 {
+            font-size: 1.8rem;
+        }
+
+        .logo span {
+            color: #f9004d;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 1rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #f9004d;
+        }
+
+        .main-content {
+            flex: 1;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0.2%;
+        }
+
+        .reviews {
+            background-color: #fff;
+            margin-top: 2rem;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .review {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .review-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .review-info h3 {
+            font-size: 1.2rem;
+        }
+
+        .review-info .review-date {
+            color: #999;
+            font-size: 0.9rem;
+        }
+
+        .review-text {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 0.3px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+
+    </style>
+</head>
+<body>
+    <div class="main-content">
+        <header>
+            <nav>
+                <div class="logo">
+                    <a href="index.html"><h1>design<span>Q.</span></h1></a>
+                </div>
+                <ul>
+                    <li><a href="about.html">About      </a> |</li>
+                    <li><a href="contract.html">Contact </a> |</li>
+                    <li><a href="Download.html">Download</a> |</li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="reviews">
+            <div class="container">
+                <h2>Customer Reviews</h2>
+
+                <div class="review">
+                    <div class="review-info">
+                        <h3>John Doe</h3>
+                        <span class="review-date">July 1, 2023</span>
+                    </div>
+                    <p class="review-text">"Amazing service and excellent designs! Highly recommend DesignQ for anyone looking to level up their game development."</p>
+                </div>
+
+                <div class="review">
+                    <div class="review-info">
+                        <h3>Jane Smith</h3>
+                        <span class="review-date">June 15, 2023</span>
+                    </div>
+                    <p class="review-text">"DesignQ has been instrumental in helping us with our game server setups. Great support and timely responses!"</p>
+                </div>
+
+                <!-- Add more reviews as needed -->
+
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 DesignQ. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
